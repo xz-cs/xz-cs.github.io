@@ -1,0 +1,72 @@
+
+*{
+    font-family: Georgia, sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+nav {
+    display: block;
+    float: left;
+    width: 10%;
+    height: 100%;
+    margin: 10px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    position: absolute;
+    background-color: lightcyan;
+}
+
+nav a {
+    color: coral;
+    display: block;
+    text-align: center;
+    padding: 30px;  /*后面要加菜单就改这个，别乱动别的。*/
+    background-color: lightblue;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+nav a:hover{
+    background-color: lightcoral;
+    color: blue;
+}
+
+a, a:visited {
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#content {
+    position: relative;
+    display: block;
+    margin: 10px;
+    float: right;
+    width: 86%;
+    border: 1px solid blue;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#content iframe {
+    height: 787px;
+    width: 1200px;
+    border: none;
+}
+
+#menuicon{
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+
+#menuicon:active{
+    transform: rotate(90deg);
+}
