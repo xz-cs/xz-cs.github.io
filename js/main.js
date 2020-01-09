@@ -16,13 +16,15 @@ function show_hide() {
     }
 }*/
 
-let index=0;
+let index=1;
 
 $(document).ready(function(){
-    $("#menuicon").click(function(){
+    $("nav").hide();
+    $("#content").animate({width:"96%"},888);
+    $(".container").click(function(){
         $("nav").toggle(888);
         if (index===0){
-            $("#content").animate({width:"95%"},888);
+            $("#content").animate({width:"96%"},888);
         }else {
             $("#content").animate({width:"86%"},888);
         }
