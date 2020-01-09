@@ -1,9 +1,9 @@
 
-*{
+* {
     font-family: Georgia, sans-serif;
 }
 
-body{
+body {
     background-color: aliceblue;
 }
 
@@ -25,14 +25,14 @@ nav a {
     color: coral;
     display: block;
     text-align: center;
-    padding: 30px;  /*后面要加菜单就改这个，别乱动别的。*/
+    padding: 30px; /*后面要加菜单就改这个，别乱动别的。*/
     background-color: lightblue;
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: lightcoral;
     color: blue;
 }
@@ -62,11 +62,38 @@ a, a:visited {
     border: none;
 }
 
-#menuicon{
+/*#menuicon{*/
+/*    cursor: pointer;*/
+/*    transform: rotate(0deg);*/
+/*}*/
+
+/*#menuicon:active{*/
+/*    transform: rotate(90deg);*/
+/*}*/
+
+.container {
+    display: inline-block;
     cursor: pointer;
-    transform: rotate(0deg);
 }
 
-#menuicon:active{
-    transform: rotate(90deg);
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
