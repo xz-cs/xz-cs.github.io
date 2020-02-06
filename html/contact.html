@@ -3,6 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>Contact me</title>
+    <script>
+        let inputindex;
+
+        function checkform() {
+            inputindex = document.querySelector('fieldset input');
+            if (inputindex.value.trim() === "") {
+                alert("Data not completed, please re-enter!");
+                return false;
+            }
+            return true;
+        }
+    </script>
     <style>
         body {
             background-color: #f0ffff;
@@ -37,5 +49,24 @@
 <br>
 <hr>
 <br>
+<h3>4.Send me a message directly from this form below:</h3>
+<br>
+<form action="https://sc.ftqq.com/SCU79665T5a1ae3aab8e8207d2045a9a8d0ad74485e39a31656b04.send" method="post">
+    <fieldset>
+        <legend>Message</legend>
+        <label for="title">Title: (Compulsory) </label>
+        <br>
+        <input type="text" name="text" id="title">
+        <br><br>
+        <label for="content">Content: (Markdown)</label>
+        <br>
+        <textarea name="desp" id="content" rows="12" cols="85"></textarea>
+        <br><br>
+        <input type="submit" onclick="return checkform();">
+        &emsp;
+        <input type="reset">
+    </fieldset>
+</form>
+<br><br><br>
 </body>
 </html>
