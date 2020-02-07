@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>404 Not Found</title>
+    <style>
+        #solutions {
+            background-color: lightgray;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        ol {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        ol li {
+            line-height: 42px;
+            transition: color 1s, background-color 1s;
+            font-size: 1em;
+        }
+
+        ol li:hover {
+            background-color: lightblue;
+            color: red;
+        }
+
+    </style>
+
+    <script>
+
+        let lists;
+
+        function init() {
+            lists = document.querySelectorAll("li");
+            for (let i = 0; i < 4; i++) {
+                lists[i].style.fontSize = "1em";
+                lists[i].style.cursor = "zoom-in";
+            }
+        }
+
+        function zoom(that) {
+            if (that.style.fontSize === "1.6em") {
+                that.style.fontSize = "1em";
+                that.style.cursor = "zoom-in";
+            } else {
+                that.style.fontSize = "1.6em";
+                that.style.cursor = "zoom-out";
+            }
+        }
+    </script>
+</head>
+<body onload="init()">
+<h1>404 Not Found</h1>
+<p>Whoops! The page you requested could not be found!</p>
+<div id="solutions">
+    <h4>Maybe you can try these solutions:</h4>
+    <ol>
+        <li onclick="zoom(this)">Make sure that you are not in a dream, or a dream within a dream, or LIMBO
+            (Whatever).
+        </li>
+        <li onclick="zoom(this)">Send me a red packet via WeChat, and I'll tell you what's the problem. (I recommend
+            this method.)
+        </li>
+        <li onclick="zoom(this)">Check the url you entered, maybe you entered a wrong url that does not exist in this
+            planet.
+        </li>
+        <li onclick="zoom(this)">You are trying to access a folder that does not have an index page.</li>
+        <li><a href="https://xz-cs.github.io/web/">Go back to the index page.</a></li>
+    </ol>
+</div>
+</body>
+</html>
