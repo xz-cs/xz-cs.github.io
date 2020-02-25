@@ -15,6 +15,13 @@
             return true;
         }
     </script>
+    <script type="text/javascript">
+        var onloadCallback = function() {
+            grecaptcha.render('html_element', {
+                'sitekey' : '6LctFtwUAAAAADocjASPkaAf9IUUMCOHIeLBMX4Q'
+            });
+        };
+    </script>
     <style>
         body {
             background-color: #f0ffff;
@@ -61,12 +68,17 @@
         <label for="content">Content: (Markdown)</label>
         <br>
         <textarea name="desp" id="content" rows="12" cols="85"></textarea>
+        <br>
+        <div id="html_element"></div>
         <br><br>
         <input type="submit" onclick="return checkform();">
         &emsp;
         <input type="reset">
     </fieldset>
 </form>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+</script>
 <br><br><br>
 </body>
 </html>
