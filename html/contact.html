@@ -35,6 +35,10 @@
                 return true;
             }
         }
+
+        function resetRecaptcha() {
+            grecaptcha.reset();
+        }
     </script>
     <style>
         body {
@@ -87,7 +91,7 @@
         <br><br>
         <input type="submit" onclick="return checkform();">
         &emsp;
-        <input type="reset">
+        <input type="reset" onclick="resetRecaptcha()">
     </fieldset>
 </form>
 <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=en"
