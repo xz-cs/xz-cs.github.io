@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../js/ua-parser.min.js"></script>
     <title>Home</title>
     <style>
         #ticker {
@@ -30,12 +31,42 @@
             display: block;
         }
 
-        iframe{
-            width: 100%;
-            height: 44em;
+        /*
+                iframe {
+                    width: 100%;
+                    height: 44em;
+                }
+
+         */
+
+        #userInfo {
+            font-size: 21px;
+            margin-left: 22px;
+            background-color: lightcyan;
+        }
+
+        #userInfo p {
+            font-family: "Comic Sans MS", serif;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        #userInfo dl dt {
+            font-family: Georgia, sans-serif;
+        }
+
+        #userInfo dl dd {
+            font-family: "Chalkboard SE", serif;
+        }
+
+        #userInfo span {
+            font-size: 16px;
+            font-weight: lighter;
+            font-family: Times New Roman, Times, serif;
         }
     </style>
     <script>
+        const parser = new UAParser();
         const news = ["You're waiting for a train; a train that will take you far away.", "You know where you hope this train will take you, but you can't be sure.", " But it doesn't matter - because we'll be together.", "-- Inception"];
         let newstext, index = 0, left;
         setInterval("move()", 10);
@@ -45,6 +76,12 @@
             left = 626;
             newstext.innerHTML = news[index];
             newstext.style.left = left + "px";
+            const osInfo = parser.getOS();
+            const browserInfo = parser.getBrowser();
+            const engineInfo = parser.getEngine();
+            document.querySelector("#userInfo #os").innerHTML = osInfo.name + " " + osInfo.version;
+            document.querySelector("#userInfo #browser").innerHTML = browserInfo.name + " " + browserInfo.major + "&emsp;(" + browserInfo.version + ") ";
+            document.querySelector("#userInfo #engine").innerHTML = engineInfo.name + " &nbsp; (" + engineInfo.version + ") ";
         }
 
         function move() {
@@ -61,22 +98,42 @@
         }
     </script>
 </head>
-<body>
+<body onload="init()">
 <div id="ticker">
     <span id="news">news ........... ticker ........... news</span>
 </div>
 <div>
     <h4>News:</h4>
     <ol>
-        <li> Semester B 2019/20 begins at 13/01/2020! See you then!!</li>
-        <li> The grades of Semester A have been released from 08/01/2020!</li>
+        <li> Online teaching will continue through Zoom until the end of Semester B 2019/20.</li>
+        <li> Final examinations will be conducted online.</li>
+        <li> CityU will suspend all overseas programmes and activities for this summer.</li>
     </ol>
     <br>
 </div>
 <img src="../images/profile.png" alt="profile" id="profile" title="Has it stopped?">
 <h2>&nbsp;Welcome to Zhang Xun's Home Page!</h2>
 <hr>
+<br>
+<div id="userInfo">
+    <p>&emsp;Hello, visitor!&emsp;</p>
+    <dl>
+        <dt>You are using:</dt>
+        <dd id="os"></dd>
+        <br>
+        <dt>You are accessing this page with:</dt>
+        <dd id="browser"></dd>
+        <br>
+        <dt>Your browser engine is :</dt>
+        <dd id="engine"></dd>
+    </dl>
+    <br>
+    <span>[Not the right information? <a href="contact.html">Click here</a> to let me know!]</span>
+</div>
+<br><br>
+<!--
 <h3>&emsp;&emsp;Editor.md -- An open source online markdown editor</h3>
-<iframe src="https://rawcdn.githack.com/pandao/editor.md/63786e671e2c1a1fd2be25b54a8910cd3bbc7c0a/examples/simple.html"> </iframe>
+<iframe src="https://rawcdn.githack.com/pandao/editor.md/63786e671e2c1a1fd2be25b54a8910cd3bbc7c0a/examples/simple.html"></iframe>
+-->
 </body>
 </html>
