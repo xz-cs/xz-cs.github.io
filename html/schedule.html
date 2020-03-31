@@ -93,15 +93,15 @@
             border-top: none;
         }
 
-        #exam {
+        .exam {
             cursor: pointer;
         }
 
-        #exam tr:hover {
+        .exam tr:hover {
             background-color: lightgoldenrodyellow;
         }
 
-        #exam td:hover {
+        .exam td:hover {
             color: blue;
             /*font-weight: bold;*/
             text-decoration: underline;
@@ -109,6 +109,11 @@
 
         #semA, #semB {
             overflow: scroll;
+        }
+
+        .warning {
+            color: red;
+            font-weight: bold;
         }
     </style>
     <title>Contact me</title>
@@ -128,7 +133,7 @@
                 $(this).css({"background-color": "white", "cursor": "initial"});
                 $("h3:even").css({"background-color": "lightblue", "cursor": "pointer"});
             });
-            $("#exam td").click(function () {
+            $(".exam td").click(function () {
                 alert($(this).text());
             });
         });
@@ -302,7 +307,11 @@
             </TR>
         </TABLE>
         <br><br>
-        <TABLE border id="exam">
+        <p class="warning">
+            <img src="../images/hwggstop.gif" alt="stop">
+            &nbsp;(2019/20 Semester A exam has been cancelled)
+        </p>
+        <TABLE border class="exam">
             <TR>
                 <TH>Course Code</TH>
                 <TH>Course Title</TH>
@@ -517,7 +526,65 @@
                 <TD class="ctt-matrix-cell-blank">&nbsp</TD>
             </TR>
         </TABLE>
-        <br>
+        <br><br>
+        <p class="warning">
+            <img src="../images/twgginfo.gif" alt="info">
+            &nbsp;Due to the novel coronavirus outbreak, the Semester B 2019/20 examinations will be conducted online
+            during the examination period.
+        </p>
+        <TABLE border class="exam">
+            <TR>
+                <TH>Course Code</TH>
+                <TH>Course Title</TH>
+                <TH>Date</TH>
+                <TH>Time</TH>
+                <TH>Room</TH>
+                <TH>Building</TH>
+                <TH>Campus</TH>
+                <TH>Seat No.</TH>
+            </TR>
+            <TR>
+                <TD> CS2310</TD>
+                <TD>Computer Programming</TD>
+                <TD>11-May-2020</TD>
+                <TD>09:30 to 11:30</TD>
+                <TD></TD>
+                <TD></TD>
+                <TD></TD>
+                <TD></TD>
+            </TR>
+            <TR>
+                <TD> MA1301</TD>
+                <TD>Enhan Calc & Linear Algebra II</TD>
+                <TD>11-May-2020</TD>
+                <TD>18:30 to 21:30</TD>
+                <TD></TD>
+                <TD></TD>
+                <TD></TD>
+                <TD></TD>
+            </TR>
+            <TR>
+                <TD> CS2402</TD>
+                <TD>Intro to Comp Prob Modeling</TD>
+                <TD>13-May-2020</TD>
+                <TD>09:30 to 11:30</TD>
+                <TD></TD>
+                <TD></TD>
+                <TD></TD>
+                <TD></TD>
+            </TR>
+            <TR>
+                <TD> PHY1201</TD>
+                <TD>General Physics I</TD>
+                <TD>23-May-2020</TD>
+                <TD>14:00 to 16:00</TD>
+                <TD></TD>
+                <TD></TD>
+                <TD></TD>
+                <TD></TD>
+            </TR>
+        </TABLE>
+        <BR>
     </div>
 </div>
 <!-- Footer -->
