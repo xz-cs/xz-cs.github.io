@@ -33,11 +33,22 @@ $(document).ready(function () {
     });
 });
 
+query_to_hash = function(queryString) {
+    let j, q;
+    q = queryString.replace(/\?/, "").split("&");
+    j = {};
+    $.each(q, function(i, arr) {
+        arr = arr.split('=');
+        return j[arr[0]] = arr[1];
+    });
+    return j;
+}
+
 function init() {
-    if (keyword!==undefined && keyword!==""){
-        document.querySelector("iframe").src = "html/" + keyword + ".html";
-    }
-    else{
-        document.querySelector("iframe").src = "html/home.html";
+    if (keyword) {
+        let paramData = query_to_hash(keyword);
+        if (paramData.target !== undefined) {
+            document.querySelector("iframe").src = "html/" + paramData.target + ".html";
+        }
     }
 }

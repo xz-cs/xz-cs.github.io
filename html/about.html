@@ -13,8 +13,7 @@
 
         #version {
             text-align: center;
-            cursor: pointer;
-            -webkit-user-select: none;  /* Safari 3.1+ */
+            -webkit-user-select: none; /* Safari 3.1+ */
             -moz-user-select: none; /* Firefox 2+ */
             -ms-user-select: none; /* IE 10+ */
             user-select: none; /* Standard syntax */
@@ -43,22 +42,72 @@
             width: 13px;
             height: 13px;
         }
+
+        #whatsnew, #credit {
+            position: fixed;
+            overflow: scroll;
+            background-color: white;
+            padding: 0 8px 8px;
+            top: 35%;
+            left: 35%;
+            width: 388px;
+            height: 277px;
+            border: 1px solid lightcoral;
+            border-radius: 12px;
+        }
+
+        .ok {
+            margin-left: 38%;
+            cursor: pointer;
+        }
+
+        .ok:hover {
+            background-color: lightcyan;
+        }
+
+        .ok:active {
+            color: coral;
+        }
+
+        #whatsnew li {
+            padding: 8px;
+        }
     </style>
+    <script>
+        let WindowStatus;
+        let WindowList = ["whatsnew", "credit"];
+
+        function init() {
+            WindowStatus = 0;
+            document.getElementById("whatsnew").style.display = "none";
+            document.getElementById("credit").style.display = "none";
+        }
+
+        function changeStatus(status) {
+            if (WindowStatus === 0 && status !== 0) {
+                document.getElementById(WindowList[status - 1]).style.display = "block";
+                WindowStatus = status;
+            } else if (WindowStatus !== 0 && status === 0) {
+                document.getElementById(WindowList[0]).style.display = "none";
+                document.getElementById(WindowList[1]).style.display = "none";
+                WindowStatus = status;
+            }
+            return false;
+        }
+    </script>
 </head>
-<body>
+<body onload="init()">
 <div id="links">
     <p><b>Useful links:</b>
         <img src="../images/open_new_window_icon.png" alt="icon" class="icon">
         <br><br>
         <a href="https://www.cityu.edu.hk" target="_blank">CityU home page</a><br><br>
-        <a href="https://banweb.cityu.edu.hk/" target="_blank">AIMS</a><br><br>
-        <a href="https://canvas.cityu.edu.hk/" target="_blank">Canvas</a><br><br>
         <a href="https://www.cityu.edu.hk/portal/" target="_blank">Portal</a><br><br>
         <a href="https://www.cs.cityu.edu.hk" target="_blank">CityU CS</a><br><br>
-        <a href="https://cslab.cs.cityu.edu.hk" target="_blank">CS Lab</a><br><br>
         <a href="https://outlook.live.com/" target="_blank">Outlook</a><br><br>
         <a href="https://drive.google.com/drive" target="_blank">Google Drive</a><br><br>
         <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a><br><br>
+        <a href="http://www.cplusplus.com/doc/tutorial/" target="_blank">C++ Tutorial</a>
     </p>
 </div>
 <div id="rec">
@@ -72,38 +121,68 @@
 </div>
 <div id="version">
     <br>
-    <span id="vinfo">Version 4.2</span>
+    <span id="vinfo">Version 4.3</span>
     <br>
-    Last Updated: 08/04/2020
+    Last Updated: 09/04/2020
     <br><br>
     [
-    <a href="https://jquery.com/" target="_blank">Download JQuery</a>
+    <a href="#" onclick="return changeStatus(1);">What's New</a>
     |
-    <a href="https://www.jetbrains.com/webstorm/" target="_blank">Get WebStorm</a>
+    <a href="#" onclick="return changeStatus(2);">Special Credit</a>
     ]
     <br>
 </div>
 
 <footer>
-    <div id="right" style="display: none;">
-        <p>
-            Designed &emsp;
-        </p>
-        <p>
-            By ZHANG Xun
-        </p>
-        <p>
-            Created &emsp;
-        </p>
-        <p>
-            With JetBrains WebStorm
-        </p>
-    </div>
     <br><br>
     <div id="center">
         © 2020 Zhang Xun. All Rights Reserved.
     </div>
+    <br>
 </footer>
 <br>
+<div id="whatsnew">
+    <h4>4.3</h4>
+    <p>(Major Functional Update)</p>
+    <ul>
+        <li>New 'Fight The Virus' column in the Home tab! Let's fight the coronavirus together!</li>
+        <li>Better url parameter handling. Now you can add a 'target' parameter to the index page. Eg:
+            xz-cs.github.io?target=schedule .
+        </li>
+        <li>The tab 'Works' has been renamed to 'Project'. Links to my project on GitHub has been added.</li>
+        <li>Big update to the 'About' page which includes Credit information.</li>
+        <li>Minor bug fix.</li>
+    </ul>
+    <p style="text-align: right;"> -- 09/04/2020 &emsp; </p>
+    <hr>
+    <button class="ok" onclick="changeStatus(0);">&emsp;OK&emsp;</button>
+</div>
+<div id="credit">
+    <h4>Credit</h4>
+    <p>
+        Some icons are made by <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a>
+        from
+        <a href="https://www.flaticon.com/" target="_blank">www.flaticon.com</a> .
+    </p>
+    <p>
+        The CSS
+        <a href="https://polarnotion.github.io/starwarsintro" target="_blank">'StarWarsIntro'</a>
+        in 404 Page is made by
+        <a href="https://polarnotion.com/" target="_blank">Polar Notion</a> .
+    </p>
+    <p>
+        The Javascript function 'query_to_hash' in index page is from
+        <a href="https://github.com/" target="_blank">GitHub</a> .
+    </p>
+    <p>
+        The Animated Menu Icon on top left is made by
+        <a href="https://www.w3schools.com/" target="_blank">w3schools</a> .
+    </p>
+    <p>
+        Some resources in the 'Schedule' page is from CityU AIMS.
+    </p>
+    <hr>
+    <button class="ok" onclick="changeStatus(0);">&emsp;OK&emsp;</button>
+</div>
 </body>
 </html>
