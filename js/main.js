@@ -33,11 +33,11 @@ $(document).ready(function () {
     });
 });
 
-query_to_hash = function(queryString) {
+query_to_hash = function (queryString) {
     let j, q;
     q = queryString.replace(/\?/, "").split("&");
     j = {};
-    $.each(q, function(i, arr) {
+    $.each(q, function (i, arr) {
         arr = arr.split('=');
         return j[arr[0]] = arr[1];
     });

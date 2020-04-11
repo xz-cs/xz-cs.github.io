@@ -77,16 +77,19 @@
         setInterval("move()", 10);
 
         function init() {
-            newstext = document.querySelector("#news");
-            left = 626;
-            newstext.innerHTML = news[index];
-            newstext.style.left = left + "px";
             const osInfo = parser.getOS();
             const browserInfo = parser.getBrowser();
             const engineInfo = parser.getEngine();
             document.querySelector("#userInfo #os").innerHTML = osInfo.name + " " + osInfo.version;
             document.querySelector("#userInfo #browser").innerHTML = browserInfo.name + " " + browserInfo.major + "&emsp;(" + browserInfo.version + ") ";
             document.querySelector("#userInfo #engine").innerHTML = engineInfo.name + " &nbsp; (" + engineInfo.version + ") ";
+        }
+
+        function init_move() {
+            newstext = document.querySelector("#news");
+            left = 626;
+            newstext.innerHTML = news[index];
+            newstext.style.left = left + "px";
         }
 
         function move() {
@@ -97,7 +100,7 @@
                 if (index > 3) {
                     index = 0;
                 }
-                init();
+                init_move();
                 index++;
             }
         }
