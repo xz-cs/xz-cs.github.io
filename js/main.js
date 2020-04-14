@@ -1,25 +1,7 @@
-/*
-let menu_icon, menus;
-
-function init() {
-    menu_icon = document.getElementById("menuicon");
-    menus = document.querySelector("nav");
-    menus.style.display = "block";
-    menu_icon.onclick = show_hide;
-}
-
-function show_hide() {
-    if (menus.style.display === "block") {
-        menus.style.display = "none";
-    } else {
-        menus.style.display = "block";
-    }
-}*/
-
 let index = 1;
 let keyword = String(window.location).split("?")[1];
 
-$(document).ready(function () {
+$(document).ready(function () {     // Do not go gentle into that good night
     $("nav").hide();
     $("#content").animate({width: "96%"}, 888);
     $(".container").click(function () {
@@ -33,7 +15,7 @@ $(document).ready(function () {
     });
 });
 
-query_to_hash = function (queryString) {
+query_to_hash = function (queryString) {      // Old age should burn and rave at close of day
     let j, q;
     q = queryString.replace(/\?/, "").split("&");
     j = {};
@@ -44,7 +26,7 @@ query_to_hash = function (queryString) {
     return j;
 }
 
-function init() {
+function init() {      // Rage, rage against the dying of the light.
     if (keyword) {
         let paramData = query_to_hash(keyword);
         if (paramData.target !== undefined) {
@@ -52,3 +34,5 @@ function init() {
         }
     }
 }
+
+// chr(128518) in python3
