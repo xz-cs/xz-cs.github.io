@@ -62,15 +62,6 @@ a, a:visited {
     border: none;
 }
 
-/*#menuicon{*/
-/*    cursor: pointer;*/
-/*    transform: rotate(0deg);*/
-/*}*/
-
-/*#menuicon:active{*/
-/*    transform: rotate(90deg);*/
-/*}*/
-
 .container {
     display: inline-block;
     cursor: pointer;

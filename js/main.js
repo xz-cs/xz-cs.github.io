@@ -1,7 +1,7 @@
 let index = 1;
 let keyword = String(window.location).split("?")[1];
 
-$(document).ready(function () {     // Do not go gentle into that good night
+$(document).ready(function () {
     $("nav").hide();
     $("#content").animate({width: "96%"}, 888);
     $(".container").click(function () {
@@ -15,7 +15,7 @@ $(document).ready(function () {     // Do not go gentle into that good night
     });
 });
 
-query_to_hash = function (queryString) {      // Old age should burn and rave at close of day
+query_to_hash = function (queryString) {
     let j, q;
     q = queryString.replace(/\?/, "").split("&");
     j = {};
@@ -26,7 +26,7 @@ query_to_hash = function (queryString) {      // Old age should burn and rave at
     return j;
 }
 
-function init() {      // Rage, rage against the dying of the light.
+function init() {
     if (keyword) {
         let paramData = query_to_hash(keyword);
         if (paramData.target !== undefined) {
@@ -34,5 +34,3 @@ function init() {      // Rage, rage against the dying of the light.
         }
     }
 }
-
-// chr(128518) in python3
