@@ -14,7 +14,7 @@ body, html{
 }
 
 .star-wars-intro {
-  background: url("https://rawcdn.githack.com/xz-cs/xz-cs.github.io/ace12a10d031f29635df46d11dc4e2402820a954/images/stars-bg.jpg") center center;
+  background: url("https://xz-cs.github.io/images/stars-bg.jpg") center center;
   width: 100%;
   height: 100%;
   font-family: "Droid Sans", arial, verdana, sans-serif;
