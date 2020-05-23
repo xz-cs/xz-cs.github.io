@@ -87,7 +87,7 @@
             cursor: pointer;
         }
 
-        #semA, #semB {
+        #showArea {
             border: 2px solid lightcoral;
             border-radius: 10px;
             border-top: none;
@@ -107,7 +107,7 @@
             text-decoration: underline;
         }
 
-        #semA, #semB {
+        #showArea {
             overflow: scroll;
         }
 
@@ -115,478 +115,82 @@
             color: red;
             font-weight: bold;
         }
+
+        button {
+            cursor: pointer;
+        }
+
     </style>
     <title>Contact me</title>
-    <script src="../js/jquery-3.5.1.min.js"></script>
+    <!--    <script src="../js/jquery-3.5.1.min.js"></script>-->
+    <script src="../js/schedule.js"></script>
     <script>
-        $(document).ready(function () {
-            $("#semA,#semB").hide();
-            $("h3:even").click(function () {
-                $("#semA").show("1000");
-                $("#semB").hide("1000");
-                $(this).css({"background-color": "white", "cursor": "initial"});
-                $("h3:odd").css({"background-color": "lightblue", "cursor": "pointer"});
-            });
-            $("h3:odd").click(function () {
-                $("#semB").show("1000");
-                $("#semA").hide("1000");
-                $(this).css({"background-color": "white", "cursor": "initial"});
-                $("h3:even").css({"background-color": "lightblue", "cursor": "pointer"});
-            });
-            $(".exam td").click(function () {
-                alert($(this).text());
-            });
-        });
+        // $(document).ready(function () {
+        //     $("#semA,#semB").hide();
+        //     $("h3:even").click(function () {
+        //         $("#semA").show("1000");
+        //         $("#semB").hide("1000");
+        //         $(this).css({"background-color": "white", "cursor": "initial"});
+        //         $("h3:odd").css({"background-color": "lightblue", "cursor": "pointer"});
+        //     });
+        //     $("h3:odd").click(function () {
+        //         $("#semB").show("1000");
+        //         $("#semA").hide("1000");
+        //         $(this).css({"background-color": "white", "cursor": "initial"});
+        //         $("h3:even").css({"background-color": "lightblue", "cursor": "pointer"});
+        //     });
+        //     $(".exam td").click(function () {
+        //         alert($(this).text());
+        //     });
+        // });
+
+        function search(opt) {
+            let year = document.querySelector("#year").value;
+            let sem = document.querySelector("#sem").value;
+            let option = opt ? "exam" : "class";
+            document.querySelector("#main").innerHTML = data[year][sem][option];
+        }
     </script>
 </head>
 <body>
 <!-- Header -->
 <header>
-    <h2>My class and exam schedule:</h2>
+    <h2>Please choose the year and semester:</h2>
 </header>
-<!-- Title -->
-<h4>2019/20</h4>
-<div id="title">
-    <h3>Sem A</h3>
-    <h3>Sem B</h3>
-</div>
-<!-- Content -->
-<div>
-    <div id="semA">
-        <TABLE border=1 class="ctt-matrix">
-            <TR>
-                <TH class="ctt-matrix-th-time">Time</TH>
-                <TH class="ctt-matrix-th-day">Monday</TH>
-                <TH class="ctt-matrix-th-day">Tuesday</TH>
-                <TH class="ctt-matrix-th-day">Wednesday</TH>
-                <TH class="ctt-matrix-th-day">Thursday</TH>
-                <TH class="ctt-matrix-th-day">Friday</TH>
-                <TH class="ctt-matrix-th-day">Saturday</TH>
-                <TH class="ctt-matrix-th-day">Sunday</TH>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">08:00-08:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">09:00-09:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-overlap" rowspan=4 valign=top>14194 <BR>BCH1100-T02<BR>YEUNG LT-12<BR><BR>11172
-                    <BR>BCH1100-L02<BR>YEUNG P4813
-                </TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>10854 <BR>CS1102-C01<BR>LI 1503</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>11168 <BR>BCH1100-C01<BR>BOC LT401</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>16789 <BR>CS1102-L12<BR>LI 1404</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">10:00-10:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">11:00-11:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>12641 <BR>GE1401-T16<BR>YEUNG B5-416</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">12:00-12:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>10300 <BR>CS2204-C01<BR>YEUNG LT-2</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>11153 <BR>MA1300-CA1<BR>YEUNG LT-17</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">13:00-13:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">14:00-14:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">15:00-15:50</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>12747 <BR>GE2322-C01<BR>CMC M4003</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=1 valign=top>14707 <BR>PED2103-T01<BR>SPORTS SWIM</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=1 valign=top>14707 <BR>PED2103-T01<BR>SPORTS SWIM</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">16:00-16:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">17:00-17:50</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=1 valign=top>17021 <BR>GE2322-T01<BR>CMC M4003</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=1 valign=top>15107 <BR>CS2204-T06<BR>MMW 2478</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">18:00-18:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>11153 <BR>MA1300-CA1<BR>YEUNG LT-17</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=1 valign=top>11156 <BR>MA1300-TA3<BR>YEUNG B5-310</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">19:00-19:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">20:00-20:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">21:00-21:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">22:00-22:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-        </TABLE>
-        <br><br>
-        <p class="warning">
-            <img src="../images/hwggstop.gif" alt="stop">
-            &nbsp;(2019/20 Semester A exam has been cancelled)
-        </p>
-        <TABLE border class="exam">
-            <TR>
-                <TH>Course Code</TH>
-                <TH>Course Title</TH>
-                <TH>Date</TH>
-                <TH>Time</TH>
-                <TH>Room</TH>
-                <TH>Building</TH>
-                <TH>Campus</TH>
-                <TH>Seat No.</TH>
-            </TR>
-            <TR>
-                <TD> MA1300</TD>
-                <TD>Enhan Calc & Linear Algebra I</TD>
-                <TD>10-Dec-2019</TD>
-                <TD>09:30 to 12:30</TD>
-                <TD>LT-5 Mr and Mrs Lau Tat Chuen Lecture Theatre (LT5)</TD>
-                <TD>YEUNG</TD>
-                <TD>Main Campus</TD>
-                <TD>0093</TD>
-            </TR>
-            <TR>
-                <TD> BCH1100</TD>
-                <TD>Chemistry</TD>
-                <TD>14-Dec-2019</TD>
-                <TD>14:00 to 16:00</TD>
-                <TD>MPR Multi-purpose Rooms A, B and C</TD>
-                <TD>BOC</TD>
-                <TD>Main Campus</TD>
-                <TD>0102</TD>
-            </TR>
-            <TR>
-                <TD> CS1102</TD>
-                <TD>Introduction to Comp Studies</TD>
-                <TD>19-Dec-2019</TD>
-                <TD>09:30 to 11:30</TD>
-                <TD>MPR Multi-purpose Rooms A, B and C</TD>
-                <TD>BOC</TD>
-                <TD>Main Campus</TD>
-                <TD>0059</TD>
-            </TR>
-            <TR>
-                <TD> GE2322</TD>
-                <TD>Nobel Pze:Disy Ap to Hum Great</TD>
-                <TD>19-Dec-2019</TD>
-                <TD>18:30 to 20:30</TD>
-                <TD>LT-10 Peter Ho Lecture Theatre (LT10)</TD>
-                <TD>YEUNG</TD>
-                <TD>Main Campus</TD>
-                <TD>0095</TD>
-            </TR>
-            <TR>
-                <TD> CS2204</TD>
-                <TD>Funds of Internet Appls Dev</TD>
-                <TD>21-Dec-2019</TD>
-                <TD>14:00 to 16:00</TD>
-                <TD>MPR Multi-purpose Rooms A, B and C</TD>
-                <TD>BOC</TD>
-                <TD>Main Campus</TD>
-                <TD>0087</TD>
-            </TR>
-        </TABLE>
-        <br>
-    </div>
+<br>
 
-    <div id="semB">
-        <TABLE border=1 class="ctt-matrix">
-            <TR>
-                <TH class="ctt-matrix-th-time">Time</TH>
-                <TH class="ctt-matrix-th-day">Monday</TH>
-                <TH class="ctt-matrix-th-day">Tuesday</TH>
-                <TH class="ctt-matrix-th-day">Wednesday</TH>
-                <TH class="ctt-matrix-th-day">Thursday</TH>
-                <TH class="ctt-matrix-th-day">Friday</TH>
-                <TH class="ctt-matrix-th-day">Saturday</TH>
-                <TH class="ctt-matrix-th-day">Sunday</TH>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">08:00-08:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">09:00-09:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>14070 <BR>CS2310-C01<BR>YEUNG LT-6</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>14073 <BR>CS2310-L03<BR>MMW 2478</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">10:00-10:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=1 valign=top>15526 <BR>PHY1201-T01<BR>YEUNG LT-1</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">11:00-11:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">12:00-12:50</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>11047 <BR>MA1301-CA1<BR>YEUNG LT-5</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=3 valign=top>15486 <BR>PHY1201-C01<BR>LI 2505</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">13:00-13:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">14:00-14:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">15:00-15:50</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=3 valign=top>15730 <BR>GE1137-C01<BR>YEUNG LT-2</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=3 valign=top>15521 <BR>PHY1201-L02<BR>YEUNG P4903</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>11047 <BR>MA1301-CA1<BR>YEUNG LT-5</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">16:00-16:50</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=1 valign=top>11050 <BR>MA1301-TA3<BR>YEUNG G5-214</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">17:00-17:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">18:00-18:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=1 valign=top>14879 <BR>CS2402-T03<BR>LI 1306</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=2 valign=top>14876 <BR>CS2402-C01<BR>YEUNG LT-17</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-class" rowspan=3 valign=top>11096 <BR>GE2410-T12<BR>YEUNG Y5-205</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">19:00-19:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">20:00-20:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">21:00-21:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-            <TR>
-                <TD class="ctt-matrix-td-time">22:00-22:50</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-                <TD class="ctt-matrix-cell-blank">&nbsp</TD>
-            </TR>
-        </TABLE>
+<div id="form">
+    <fieldset>
+        <legend>Form</legend>
+
+        <label for="year">1. Choose year: &emsp;&emsp;&emsp;&nbsp;</label>
+        <select id="year">
+            <option value="2019/20" selected>2019/20 &nbsp;</option>
+        </select>
         <br><br>
-        <p class="warning">
-            <img src="../images/twgginfo.gif" alt="info">
-            &nbsp;Due to the novel coronavirus outbreak, the Semester B 2019/20 examinations will be conducted online
-            during the examination period.
-        </p>
-        <TABLE border class="exam">
-            <TR>
-                <TH>Course Code</TH>
-                <TH>Course Title</TH>
-                <TH>Date</TH>
-                <TH>Time</TH>
-                <TH>Room</TH>
-                <TH>Building</TH>
-                <TH>Campus</TH>
-                <TH>Seat No.</TH>
-            </TR>
-            <TR>
-                <TD> CS2310</TD>
-                <TD>Computer Programming</TD>
-                <TD>11-May-2020</TD>
-                <TD>09:30 to 11:30</TD>
-                <TD></TD>
-                <TD></TD>
-                <TD></TD>
-                <TD></TD>
-            </TR>
-            <TR>
-                <TD> MA1301</TD>
-                <TD>Enhan Calc & Linear Algebra II</TD>
-                <TD>11-May-2020</TD>
-                <TD>18:30 to 21:30</TD>
-                <TD></TD>
-                <TD></TD>
-                <TD></TD>
-                <TD></TD>
-            </TR>
-            <TR>
-                <TD> CS2402</TD>
-                <TD>Intro to Comp Prob Modeling</TD>
-                <TD>13-May-2020</TD>
-                <TD>09:30 to 11:30</TD>
-                <TD></TD>
-                <TD></TD>
-                <TD></TD>
-                <TD></TD>
-            </TR>
-            <TR>
-                <TD> PHY1201</TD>
-                <TD>General Physics I</TD>
-                <TD>23-May-2020</TD>
-                <TD>14:00 to 16:00</TD>
-                <TD></TD>
-                <TD></TD>
-                <TD></TD>
-                <TD></TD>
-            </TR>
-        </TABLE>
-        <BR>
-    </div>
+
+        <label for="sem">2. Choose semester: &emsp;</label>
+        <select id="sem">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="Summer" selected>Summer</option>
+        </select>
+        <br><br>
+
+        &emsp;
+        <button onclick="search(0);">Search Class Schedule</button>
+        &emsp;
+        <button onclick="search(1)">Search Exam Schedule</button>
+
+    </fieldset>
+
 </div>
+
+<br>
+<div id="main">
+
+</div>
+
 <!-- Footer -->
 <footer>
 

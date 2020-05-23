@@ -50,22 +50,25 @@
             padding: 0 8px 8px;
             top: 35%;
             left: 35%;
-            width: 388px;
-            height: 288px;
+            width: 456px;
+            height: 386px;
             border: 1px solid lightcoral;
             border-radius: 12px;
         }
 
-        .ok {
-            margin-left: 38%;
+        button {
             cursor: pointer;
         }
 
-        .ok:hover {
+        .buttons {
+            margin-left: 38%;
+        }
+
+        .buttons:hover {
             background-color: lightcyan;
         }
 
-        .ok:active {
+        .buttons:active {
             color: coral;
         }
 
@@ -73,6 +76,7 @@
             padding: 8px;
         }
     </style>
+    <script src="../js/whatsnew.js"></script>
     <script>
         let WindowStatus;
         let WindowList = ["whatsnew", "credit"];
@@ -81,6 +85,11 @@
             WindowStatus = 0;
             document.getElementById("whatsnew").style.display = "none";
             document.getElementById("credit").style.display = "none";
+            let v_num = data.versions.length;
+            for (let i = 0; i < v_num; i++) {
+                let addition = i === v_num - 1 ? " selected" : "";
+                document.getElementById("ver").innerHTML += "<option" + addition + " value=\"" + data.versions[i] + "\">" + data.versions[i] + "&emsp;&emsp;</option>";
+            }
         }
 
         function changeStatus(status) {
@@ -93,6 +102,12 @@
                 WindowStatus = status;
             }
             return false;
+        }
+
+        function search() {
+            let content = data[document.querySelector("#ver").value];
+            if (!content) content = "Record not found!";
+            document.querySelector("#v_content").innerHTML = content;
         }
     </script>
 </head>
@@ -121,9 +136,9 @@
 </div>
 <div id="version">
     <br>
-    <span id="vinfo">Version 4.3.2</span>
+    <span id="vinfo">Version 4.4</span>
     <br>
-    Last Updated: 12/05/2020
+    Last Updated: 24/05/2020
     <br><br>
     [
     <a href="#" onclick="return changeStatus(1);">What's New</a>
@@ -142,34 +157,23 @@
 </footer>
 <br>
 <div id="whatsnew">
-    <h4>4.3.2</h4>
-    <ul>
-        <li>Fixed an incident that led to page errors.</li>
-    </ul>
-    <p style="text-align: right;"> -- 12/05/2020 &emsp; </p>
-    <hr>
+    <h4>Version Information</h4>
 
-    <h4>4.3.1</h4>
-    <ul>
-        <li>New credit information and Minor bug fix.</li>
-    </ul>
-    <p style="text-align: right;"> -- 11/04/2020 &emsp; </p>
-    <hr>
+    <fieldset>
+        <legend>Form</legend>
+        <label for="ver">Choose a version to search:</label>
+        <br>
+        <select id="ver">
 
-    <h4>4.3</h4>
-    <p>(Major Functional Update)</p>
-    <ul>
-        <li>New 'Fight The Virus' column in the Home tab! Let's fight the coronavirus together!</li>
-        <li>Better url parameter handling. Now you can add a 'target' parameter to the index page. Eg:
-            xz-cs.github.io?target=schedule .
-        </li>
-        <li>The tab 'Works' has been renamed to 'Project'. Links to my project on GitHub has been added.</li>
-        <li>Big update to the 'About' page which includes Credit information.</li>
-        <li>Minor bug fix.</li>
-    </ul>
-    <p style="text-align: right;"> -- 09/04/2020 &emsp; </p>
+        </select>
+        &emsp;
+        <button onclick="search()"> Search</button>
+    </fieldset>
+
+    <div id="v_content"></div>
+    <br>
     <hr>
-    <button class="ok" onclick="changeStatus(0);">&emsp;OK&emsp;</button>
+    <button class="buttons" onclick="changeStatus(0);">&emsp;OK&emsp;</button>
 </div>
 <div id="credit">
     <h4>Credit</h4>
@@ -206,7 +210,7 @@
         Some resources in the 'Schedule' page are from CityU AIMS.
     </p>
     <hr>
-    <button class="ok" onclick="changeStatus(0);">&emsp;OK&emsp;</button>
+    <button class="buttons" onclick="changeStatus(0);">&emsp;OK&emsp;</button>
 </div>
 </body>
 </html>
