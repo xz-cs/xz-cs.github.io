@@ -90,6 +90,8 @@
                 let addition = i === v_num - 1 ? " selected" : "";
                 document.getElementById("ver").innerHTML += "<option" + addition + " value=\"" + data.versions[i] + "\">" + data.versions[i] + "&emsp;&emsp;</option>";
             }
+            document.querySelector("#vinfo").innerHTML = "Version " + data.versions[v_num - 1];
+            document.querySelector("#time").innerHTML = data.latest_date;
         }
 
         function changeStatus(status) {
@@ -136,9 +138,9 @@
 </div>
 <div id="version">
     <br>
-    <span id="vinfo">Version 4.4</span>
+    <span id="vinfo"></span>
     <br>
-    Last Updated: 24/05/2020
+    Last Updated: <span id="time"></span>
     <br><br>
     [
     <a href="#" onclick="return changeStatus(1);">What's New</a>

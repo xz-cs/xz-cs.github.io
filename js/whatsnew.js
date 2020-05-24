@@ -18,7 +18,7 @@ const data = {
         "    <p style=\"text-align: right;\"> -- 09/04/2020 &emsp; </p>",
 
     "4.3.1": "<ul>\n" +
-        "        <li>New credit information and Minor bug fix.</li>\n" +
+        "        <li>New credit information and minor bug fix.</li>\n" +
         "    </ul>\n" +
         "    <p style=\"text-align: right;\"> -- 11/04/2020 &emsp; </p>",
 
