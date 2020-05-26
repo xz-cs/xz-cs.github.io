@@ -157,8 +157,8 @@ const data = {
 
             "exam": "<p class=\"warning\">\n" +
                 "            <img src=\"../images/hwggstop.gif\" alt=\"stop\">\n" +
-                "            &nbsp;(2019/20 Semester A exam has been cancelled)\n" +
-                "        </p>\n" +
+                "            &nbsp;<strong>(2019/20 Semester A exam has been cancelled)\n</strong>" +
+                "        </p>\n <s>" +
                 "        <TABLE border class=\"exam\">\n" +
                 "            <TR>\n" +
                 "                <TH>Course Code</TH>\n" +
@@ -220,7 +220,7 @@ const data = {
                 "                <TD>Main Campus</TD>\n" +
                 "                <TD>0087</TD>\n" +
                 "            </TR>\n" +
-                "        </TABLE>"
+                "        </TABLE></s>"
         },
 
         "B": {
@@ -434,9 +434,167 @@ const data = {
         },
 
         "Summer": {
-            "class": "<p>Not yet registered</p>",
+            "class": "<TABLE  border=1  class=\"ctt-matrix\">\n" +
+                "<TR>\n" +
+                "<TH class=\"ctt-matrix-th-time\">Time</TH>\n" +
+                "<TH class=\"ctt-matrix-th-day\">Monday</TH>\n" +
+                "<TH class=\"ctt-matrix-th-day\">Tuesday</TH>\n" +
+                "<TH class=\"ctt-matrix-th-day\">Wednesday</TH>\n" +
+                "<TH class=\"ctt-matrix-th-day\">Thursday</TH>\n" +
+                "<TH class=\"ctt-matrix-th-day\">Friday</TH>\n" +
+                "<TH class=\"ctt-matrix-th-day\">Saturday</TH>\n" +
+                "<TH class=\"ctt-matrix-th-day\">Sunday</TH>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">08:00-08:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">09:00-09:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">10:00-10:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10254 <BR>GE2324-C01<BR>YEUNG LT-17</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">11:00-11:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">12:00-12:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">13:00-13:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">14:00-14:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">15:00-15:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">16:00-16:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10255 <BR>GE2324-T01<BR>MMW 1411</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">17:00-17:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">18:00-18:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">19:00-19:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10254 <BR>GE2324-C01<BR>YEUNG LT-17</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">20:00-20:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">21:00-21:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD class=\"ctt-matrix-td-time\">22:00-22:50</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "</TR>\n" +
+                "</TABLE>\n",
 
-            "exam": "<p>Not ready</p>"
+            "exam": "<p>Exam schedule for this term is not ready yet.</p>"
         }
     }
 }
