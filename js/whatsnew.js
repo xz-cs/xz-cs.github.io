@@ -1,7 +1,7 @@
 const data = {
     versions: ["Older", "4.3", "4.3.1", "4.3.2", "4.4", "4.4.1", "4.4.5"],
 
-    latest_date: "27/05/2020",
+    latest_date: "04/06/2020",
 
     "Older": "<p>The codes for older version (3.x) can be found " +
         "<a href='https://github.com/xz-cs/web_old_3' target='_blank'>in this archived repository</a> .</p>",

@@ -507,17 +507,15 @@ const data = {
                 "<TR>\n" +
                 "<TD class=\"ctt-matrix-td-time\">14:00-14:50</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10679 <BR>GE2262-C01<BR> </TD>\n" +
+                "<TD class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>10680 <BR>GE2262-T01<BR> </TD>\n" +
+                "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10679 <BR>GE2262-C01<BR> </TD>\n" +
+                "<TD class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>10680 <BR>GE2262-T01<BR> </TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "</TR>\n" +
                 "<TR>\n" +
                 "<TD class=\"ctt-matrix-td-time\">15:00-15:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
@@ -592,7 +590,7 @@ const data = {
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "</TR>\n" +
-                "</TABLE>\n",
+                "</TABLE>",
 
             "exam": "<p>Exam schedule for this term is not ready yet.</p>"
         }

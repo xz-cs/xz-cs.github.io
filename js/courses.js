@@ -97,4 +97,11 @@ const data = [
         sem: "Summer"
     },
 
+    {
+        subject: "GE",
+        code: "2262",
+        year: "2019/20",
+        sem: "Summer"
+    },
+
 ]
