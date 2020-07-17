@@ -35,6 +35,8 @@ function init() {
         } else {
             change("home")
         }
+    } else {
+        change("home")
     }
     let set_a = document.querySelectorAll("nav a");
     for (let el of set_a) {
