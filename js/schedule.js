@@ -592,7 +592,28 @@ const data = {
                 "</TR>\n" +
                 "</TABLE>",
 
-            "exam": "<p>Exam schedule for this term is not ready yet.</p>"
+            "exam": "<br><img src=\"../images/twgginfo.gif\" alt=\"info\">\n" +
+                "<b><font color=\"red\">Due to the COVID-19 outbreak, the Summer Term 2020 examinations will be conducted online during the examination period.</b></font>" +
+                "<br><br><TABLE  border class=\"exam\">\n" +
+                "<TR>\n" +
+                "<TH>Course Code</TH>\n" +
+                "<TH>Course Title</TH>\n" +
+                "<TH>Date</TH>\n" +
+                "<TH>Time</TH>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD> GE2262</TD>\n" +
+                "<TD>Business Statistics</TD>\n" +
+                "<TD>06-Aug-2020</TD>\n" +
+                "<TD>14:00 to 16:00</TD>\n" +
+                "</TR>\n" +
+                "<TR>\n" +
+                "<TD> GE2324</TD>\n" +
+                "<TD>The Art and Science of Data</TD>\n" +
+                "<TD>07-Aug-2020</TD>\n" +
+                "<TD>14:00 to 16:00</TD>\n" +
+                "</TR>\n" +
+                "</TABLE>"
         }
     }
 }

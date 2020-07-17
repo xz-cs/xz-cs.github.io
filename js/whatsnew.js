@@ -1,7 +1,7 @@
 const data = {
-    versions: ["Older", "4.3", "4.3.1", "4.3.2", "4.4", "4.4.1", "4.4.5"],
+    versions: ["Older", "4.3", "4.3.1", "4.3.2", "4.4", "4.4.1", "4.4.5", "4.5"],
 
-    latest_date: "04/06/2020",
+    latest_date: "17/07/2020",
 
     "Older": "<p>The codes for older version (3.x) can be found " +
         "<a href='https://github.com/xz-cs/web_old_3' target='_blank'>in this archived repository</a> .</p>",
@@ -42,5 +42,11 @@ const data = {
         "        <li>Update to the display of courses in 'Study' page. Now they are also in 'search' style and you can apply filters to search for specific courses. </li>\n" +
         "    </ul>\n" +
         "    <p style=\"text-align: right;\"> -- 27/05/2020 &emsp; </p>",
+
+    "4.5" : "<ul>\n" +
+        "        <li>Update to the color effect of left navigation bar. </li>\n" +
+        "        <li>Update to the latest news and exam schedule.&emsp; <i>(Links to courses are automatically redirected by CityU)</i></li>\n" +
+        "    </ul>\n" +
+        "    <p style=\"text-align: right;\"> -- 17/07/2020 &emsp; </p>",
 
 }
