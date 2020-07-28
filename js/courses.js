@@ -92,16 +92,58 @@ const data = [
 
     {
         subject: "GE",
-        code: "2324",
+        code: "2262",
         year: "2019/20",
         sem: "Summer"
     },
 
     {
         subject: "GE",
-        code: "2262",
+        code: "2324",
         year: "2019/20",
         sem: "Summer"
     },
+
+    {
+        subject: "CS",
+        code: "2115",
+        year: "2020/21",
+        sem: "A"
+    },
+
+    {
+        subject: "CS",
+        code: "2312",
+        year: "2020/21",
+        sem: "A"
+    },
+
+    {
+        subject: "CS",
+        code: "2611",
+        year: "2020/21",
+        sem: "A"
+    },
+
+    {
+        subject: "CS",
+        code: "3201",
+        year: "2020/21",
+        sem: "A"
+    },
+
+    {
+        subject: "CS",
+        code: "3334",
+        year: "2020/21",
+        sem: "A"
+    },
+
+    {
+        subject: "MA",
+        code: "2185",
+        year: "2020/21",
+        sem: "A"
+    }
 
 ]
