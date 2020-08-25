@@ -619,8 +619,7 @@ const data = {
 
     "2020/21": {
         "A": {
-            "class": "<h5>(Tentative)</h5>" +
-                "<TABLE  border=1  class=\"ctt-matrix\">\n" +
+            "class": "<TABLE  border=1  class=\"ctt-matrix\">\n" +
                 "<TR>\n" +
                 "<TH class=\"ctt-matrix-th-time\">Time</TH>\n" +
                 "<TH class=\"ctt-matrix-th-day\">Monday</TH>\n" +
@@ -686,7 +685,7 @@ const data = {
                 "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>13920 <BR>CS2312-T04<BR>MMW 2450</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>13362 <BR>CS3334-T04<BR>MMW 2450</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>11438 <BR>CS2312-C01<BR>YEUNG LT-17</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10510 <BR>CB2100-C01<BR>YEUNG LT-1</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "</TR>\n" +
@@ -696,13 +695,12 @@ const data = {
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "</TR>\n" +
                 "<TR>\n" +
                 "<TD class=\"ctt-matrix-td-time\">15:00-15:50</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-class\" rowspan=3 valign=top>10748 <BR>MA2185-C01<BR>YEUNG LT-1</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>11431 <BR>CS2115-C01<BR>BOC LT401</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>10656 <BR>CB2100-T01<BR>LI 1110</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>12779 <BR>CS3334-C01<BR>YEUNG LT-2</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +

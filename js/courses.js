@@ -144,6 +144,13 @@ const data = [
         code: "2185",
         year: "2020/21",
         sem: "A"
-    }
+    },
+
+    {
+        subject: "CB",
+        code: "2100",
+        year: "2020/21",
+        sem: "A"
+    },
 
 ]
