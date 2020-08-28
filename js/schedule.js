@@ -644,7 +644,7 @@ const data = {
                 "<TD class=\"ctt-matrix-td-time\">09:00-09:50</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>16291 <BR>MA2185-T03<BR>YEUNG P4704</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
@@ -708,7 +708,7 @@ const data = {
                 "</TR>\n" +
                 "<TR>\n" +
                 "<TD class=\"ctt-matrix-td-time\">16:00-16:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
+                "<TD class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>16292 <BR>MA2185-T04<BR>LI 1601</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
                 "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
