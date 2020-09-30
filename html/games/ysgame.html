@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运势测试</title>
+    <style>
+
+        body {
+            background-color: aliceblue;
+        }
+
+        #demo {
+            position: absolute;
+            margin: 30px;
+            padding: 30px;
+            display: block;
+            width: 60px;
+            height: 60px;
+            font-size: 22px;
+            font-family: Georgia, serif;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            text-decoration: none;
+            margin: 2px 2px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            color: blue;
+            background-color: lightcoral;
+        }
+
+        button:disabled {
+            background-color: darkgrey;
+            color: dimgrey;
+        }
+    </style>
+    <script>
+        function main() {
+            document.querySelector("button").disabled = true;
+            start(0);
+        }
+
+        function start(counter) {
+            if (counter < 20) {
+                setTimeout(function () {
+                    counter++;
+                    var res;
+                    if (counter === 10) res = 14;
+                    else if (counter === 9) res = 16;
+                    else res = counter;
+                    replace(res % 10 - 1)
+                    start(counter);
+                }, 235);
+            } else {
+                replace(Math.floor(Math.random() * 8));
+                document.querySelector("button").disabled = false;
+                document.querySelector("button").innerHTML = "&emsp;&nbsp;点此重新测试&nbsp;&emsp;";
+            }
+        }
+
+
+        function replace(option) {
+            if (option == 0) {
+                document.querySelector("#demo").innerHTML = "A C";
+                document.querySelector("#text").innerHTML = "Accepted";
+                document.querySelector("#demo").style.backgroundColor = "lightgreen";
+                document.querySelector("#text").style.color = "lightgreen";
+            } else if (option == 1) {
+                document.querySelector("#demo").innerHTML = "W A";
+                document.querySelector("#text").innerHTML = "Wrong Answer";
+                document.querySelector("#demo").style.backgroundColor = "red";
+                document.querySelector("#text").style.color = "red";
+            } else if (option == 2) {
+                document.querySelector("#demo").innerHTML = "R E";
+                document.querySelector("#text").innerHTML = "Runtime Error";
+                document.querySelector("#demo").style.backgroundColor = "brown";
+                document.querySelector("#text").style.color = "brown";
+            } else if (option == 3) {
+                document.querySelector("#demo").innerHTML = "C E";
+                document.querySelector("#text").innerHTML = "Compile Error";
+                document.querySelector("#demo").style.backgroundColor = "lightblue";
+                document.querySelector("#text").style.color = "lightblue";
+            } else if (option == 4) {
+                document.querySelector("#demo").innerHTML = "TLE";
+                document.querySelector("#text").innerHTML = "Time Limit Exceeded";
+                document.querySelector("#demo").style.backgroundColor = "pink";
+                document.querySelector("#text").style.color = "pink";
+            } else if (option == 5) {
+                document.querySelector("#demo").innerHTML = "MLE";
+                document.querySelector("#text").innerHTML = "Memory Limit Exceeded";
+                document.querySelector("#demo").style.backgroundColor = "purple";
+                document.querySelector("#text").style.color = "purple";
+            } else if (option == 6) {
+                document.querySelector("#demo").innerHTML = "P E";
+                document.querySelector("#text").innerHTML = "Presentation Error";
+                document.querySelector("#demo").style.backgroundColor = "yellow";
+                document.querySelector("#text").style.color = "yellow";
+            } else if (option == 7) {
+                document.querySelector("#demo").innerHTML = "OLE";
+                document.querySelector("#text").innerHTML = "Output Limit Exceeded";
+                document.querySelector("#demo").style.backgroundColor = "grey";
+                document.querySelector("#text").style.color = "grey";
+            } else {
+                document.querySelector("#demo").innerHTML = "???";
+                document.querySelector("#text").innerHTML = "??";
+                document.querySelector("#demo").style.backgroundColor = "white";
+                document.querySelector("#text").style.color = "white";
+            }
+        }
+    </script>
+</head>
+
+<body>
+<br><br>
+<button onclick="main()">点此测试你的今日运势！</button>
+
+<div>
+    <br>
+    <hr>
+    你今天的运势是: &nbsp;
+    <span id="text">??</span>
+</div>
+
+<div id="demo">???</div>
+
+</body>
+
+</html>

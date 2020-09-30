@@ -1,7 +1,7 @@
 const data = {
-    versions: ["Older", "4.3", "4.3.1", "4.3.2", "4.4", "4.4.1", "4.4.5", "4.5", "4.5.1", "4.5.2", "4.5.3"],
+    versions: ["Older", "4.3", "4.3.1", "4.3.2", "4.4", "4.4.1", "4.4.5", "4.5", "4.5.1", "4.5.2", "4.5.3", "4.5.4"],
 
-    latest_date: "06/09/2020",
+    latest_date: "30/09/2020",
 
     "Older": "<p>The codes for older version (3.x) can be found " +
         "<a href='https://github.com/xz-cs/web_old_3' target='_blank'>in this archived repository</a> .</p>",
@@ -64,5 +64,11 @@ const data = {
         "        <li>Update to contact information and news in home page. </li>\n" +
         "    </ul>\n" +
         "    <p style=\"text-align: right;\"> -- 06/09/2020 &emsp; </p>",
+
+    "4.5.4": "<ul>\n" +
+        "        <li>Update the first news in home page to the latest. </li>\n" +
+        "        <li>Added a new funny game. </li>\n" +
+        "    </ul>\n" +
+        "    <p style=\"text-align: right;\"> -- 30/09/2020 &emsp; </p>",
 
 }
