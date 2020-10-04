@@ -8,6 +8,7 @@
     <title>Study</title>
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/courses.js"></script>
+    <link rel="stylesheet" href="../css/w3.css">
     <script>
         let courses_rows;
 
@@ -54,6 +55,7 @@
     <style type="text/css">
         body {
             background-color: #f0ffff;
+            padding: 12px;
         }
 
         #courses table, #courses th, #courses td {
@@ -85,6 +87,7 @@
             font-weight: bold;
         }
     </style>
+    <link rel="stylesheet" href="../css/general.css">
 </head>
 <body>
 <h3>
@@ -92,10 +95,10 @@
     <img src="../images/open_new_window_icon.png" alt="icon" class="icon">
 </h3>
 
-<fieldset>
+<fieldset class="w3-round-xlarge">
     <legend>Filters</legend>
     <label for="year">Year: </label> &emsp;&emsp;&emsp;
-    <select id="year" size="3" multiple>
+    <select id="year" size="3" multiple class="w3-border w3-border-gray w3-round-large">
         <option selected value="%">&lt;all&gt;</option>
         <option value="2019/20">2019/20</option>
         <option value="2020/21">2020/21</option>
@@ -103,7 +106,7 @@
     <br><br>
 
     <label for="sem">Semester: </label> &emsp;
-    <select id="sem" size="3" multiple>
+    <select id="sem" size="3" multiple class="ww3-border w3-border-gray w3-round-large">
         <option selected value="%">&lt;all&gt;</option>
         <option value="A">A</option>
         <option value="B">B</option>
@@ -112,7 +115,7 @@
     <br><br>
 
     <label for="subject">Subject: </label> &emsp;&emsp;
-    <select id="subject" size="3" multiple>
+    <select id="subject" size="3" multiple class="w3-border w3-border-gray w3-round-large">
         <option selected value="%">&lt;all&gt;</option>
         <option value="CS">Computer Science</option>
         <option value="BCH">Chemistry</option>
@@ -124,7 +127,9 @@
     </select>
     <br><br>
 
-    <button onclick="search()">Search</button>
+    <button onclick="search()"
+            class="w3-btn  w3-round-large w3-pale-green w3-hover-pale-yellow w3-small w3-border w3-ripple">Search
+    </button>
 </fieldset>
 
 <span id="demo"></span>
@@ -145,7 +150,7 @@
 
 <br><br>
 <h3>CS2204 Tutorial Homework</h3>
-<a href="tutorial5b.html" target="_blank">Like your video - A survey</a>
+<a href="tutorial5b.html" target="_blank" class="general">Like your video - A survey</a>
 <img src="../images/open_new_window_icon.png" alt="icon" class="icon">
 <br>
 </body>

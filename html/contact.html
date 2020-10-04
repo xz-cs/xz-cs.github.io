@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>Contact me</title>
+    <link rel="stylesheet" href="../css/general.css">
     <script>
         let inputindex;
 
         function checkform() {
             inputindex = document.querySelector('fieldset input');
             if (inputindex.value.trim() === "") {
-                alert("Data not completed, please re-enter!");
+                alert("Data not completed, please check again!");
                 return false;
             } else if (!getResponseFromRecaptcha()) {
                 alert("Please verify that you are not a robot!");
@@ -69,14 +70,14 @@
 <div style="color: grey; text-decoration: line-through;">
     <h3>2.E-mail</h3>
     <p>You can choose whichever e-mail address below:</p>
-    <a href="javascript:alert('Disabled.');" style="color: grey;">CityU Office365</a><br>
-    <a href="javascript:alert('Disabled.');" style="color: grey;">Outlook</a><br>
-    <a href="javascript:alert('Disabled.');" style="color: grey;">Gmail</a><br>
-    <a href="javascript:alert('Disabled.');" style="color: grey;">CityU Gapps</a><br>
+    <a style="color: grey; cursor: not-allowed;" title="Disabled.">CityU Office365</a><br>
+    <a style="color: grey; cursor: not-allowed;" title="Disabled.">Outlook</a><br>
+    <a style="color: grey; cursor: not-allowed;" title="Disabled.">Gmail</a><br>
+    <a style="color: grey; cursor: not-allowed;" title="Disabled.">CityU Gapps</a><br>
     <br><br>
     <hr>
     <h3>3.Phone number & WhatsApp</h3>
-    <p>My Phone number is +852 ********<br><br> or +86 ***********</p>
+    <p style="cursor: not-allowed;">My Phone number is +852 ********<br><br> or +86 ***********</p>
     <br>
     <hr>
     <br>

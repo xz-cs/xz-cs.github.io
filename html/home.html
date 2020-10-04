@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="../js/ua-parser.min.js"></script>
     <title>Home</title>
+    <link rel="stylesheet" href="../css/general.css">
     <style>
         #ticker {
             width: 620px;
@@ -72,7 +73,7 @@
     </style>
     <script>
         const parser = new UAParser();
-        const news = ["You're waiting for a train; a train that will take you far away.", "You know where you hope this train will take you, but you can't be sure.", " But it doesn't matter - because we'll be together.", "-- Inception"];
+        const news = ["Beautiful is better than ugly. Explicit is better than implicit. ", "Simple is better than complex. Complex is better than complicated. ", "Flat is better than nested. Sparse is better than dense. ", "-- <i>The Zen of Python, by Tim Peters.</i>"];
         let newstext, index = 0, left;
         setInterval("move()", 10);
 
@@ -114,19 +115,25 @@
     <h4>News:</h4>
     <ol>
         <li>
-            <a href="https://cap.cityu.edu.hk/studentlan/postDetail.aspx?id=Q17m1820t205309X870729" target="_blank">Teaching and Learning Arrangements for Semester A 2020/21 </a>
+            <a href="https://cap.cityu.edu.hk/studentlan/postDetail.aspx?id=Q17m1820t205309X870729" target="_blank"
+               class="general">Teaching and Learning Arrangements for Semester A 2020/21 </a>
             &nbsp;<i>(2020-09-29)</i>
         </li>
-        <li><a href="https://www.news.gov.hk/chi/categories/covid19/index.html" target="_blank">Hong Kong Covid-19 News</a></li>
+        <li><a href="https://www.news.gov.hk/chi/categories/covid19/index.html" target="_blank" class="general">Hong
+            Kong Covid-19 News</a></li>
     </ol>
     <br>
 </div>
 <img src="../images/profile.JPEG" alt="profile" id="profile" title="Hello, World!">
 <h3>Together, we can defeat the coronavirus!</h3>
 <img src="../images/fightTheVirus/medical-mask.png" alt="medical-mask" title="medical-mask" class="fightTheVirus">
+&nbsp;
 <img src="../images/fightTheVirus/disinfectant.png" alt="disinfectant" title="disinfectant" class="fightTheVirus">
+&nbsp;
 <img src="../images/fightTheVirus/thermometer.png" alt="thermometer" title="thermometer" class="fightTheVirus">
+&nbsp;
 <img src="../images/fightTheVirus/sneeze.png" alt="sneeze" title="sneeze" class="fightTheVirus">
+&nbsp;&nbsp;
 <img src="../images/fightTheVirus/stayhome.png" alt="stayhome" title="stayhome" class="fightTheVirus">
 <br><br>
 <h2>&nbsp;Welcome to Zhang Xun's Home Page!</h2>

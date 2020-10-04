@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/w3.css">
     <style type="text/css">
         body {
             background-color: #F0FFFF;
+            padding: 13px;
         }
 
         .ctt-matrix-container {
@@ -125,25 +127,6 @@
     <!--    <script src="../js/jquery-3.5.1.min.js"></script>-->
     <script src="../js/schedule.js"></script>
     <script>
-        // $(document).ready(function () {
-        //     $("#semA,#semB").hide();
-        //     $("h3:even").click(function () {
-        //         $("#semA").show("1000");
-        //         $("#semB").hide("1000");
-        //         $(this).css({"background-color": "white", "cursor": "initial"});
-        //         $("h3:odd").css({"background-color": "lightblue", "cursor": "pointer"});
-        //     });
-        //     $("h3:odd").click(function () {
-        //         $("#semB").show("1000");
-        //         $("#semA").hide("1000");
-        //         $(this).css({"background-color": "white", "cursor": "initial"});
-        //         $("h3:even").css({"background-color": "lightblue", "cursor": "pointer"});
-        //     });
-        //     $(".exam td").click(function () {
-        //         alert($(this).text());
-        //     });
-        // });
-
         function search(opt) {
             let year = document.querySelector("#year").value;
             let sem = document.querySelector("#sem").value;
@@ -157,23 +140,23 @@
 <body>
 <!-- Header -->
 <header>
-    <h2>Please choose the year and semester:</h2>
+    <h2>Please choose year and semester:</h2>
 </header>
 <br>
 
 <div id="form">
-    <fieldset>
+    <fieldset class="w3-round-xlarge">
         <legend>Form</legend>
 
         <label for="year">1. Choose year: &emsp;&emsp;&emsp;&nbsp;</label>
-        <select id="year">
+        <select id="year" class="w3-border w3-border-gray w3-round-large">
             <option value="2019/20">2019/20 &nbsp;</option>
             <option value="2020/21" selected>2020/21 &nbsp;</option>
         </select>
         <br><br>
 
         <label for="sem">2. Choose semester: &emsp;</label>
-        <select id="sem">
+        <select id="sem" class="w3-border w3-border-gray w3-round-large">
             <option value="A" selected>A</option>
             <option value="B">B</option>
             <option value="Summer">Summer</option>
@@ -181,9 +164,15 @@
         <br><br>
 
         &emsp;
-        <button onclick="search(0);">Search Class Schedule</button>
+        <button onclick="search(0);"
+                class="w3-btn  w3-round-large w3-pale-green w3-hover-pale-red w3-small w3-border w3-ripple">Search Class
+            Schedule
+        </button>
         &emsp;
-        <button onclick="search(1)">Search Exam Schedule</button>
+        <button onclick="search(1)"
+                class="w3-btn  w3-round-large w3-pale-green w3-hover-pale-yellow w3-small w3-border w3-ripple">Search
+            Exam Schedule
+        </button>
 
     </fieldset>
 

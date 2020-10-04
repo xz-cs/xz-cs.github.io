@@ -1,0 +1,13 @@
+
+a.general, a.general:visited {
+    color: rgb(50, 50, 200);
+}
+
+a.general {
+    text-decoration: none;
+}
+
+a.general:hover {
+    text-decoration: underline;
+    text-decoration-color: purple;
+}
