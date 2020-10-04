@@ -73,7 +73,7 @@ const data = {
 
     "4.6": "<ul>\n" +
         "        <li>Update to the style of all links in the site. </li>\n" +
-        "        <li>Apply W3.CSS in the new design of buttons and forms in some pages of the site. </li>\n" +
+        "        <li>Apply W3.CSS to new UI design of buttons and forms in some pages of the site. </li>\n" +
         "        <li>Update to some details, e.g. scrolling text in home page. </li>\n" +
         "    </ul>\n" +
         "    <p style=\"text-align: right;\"> -- 04 Oct. 2020 &emsp; </p>",
