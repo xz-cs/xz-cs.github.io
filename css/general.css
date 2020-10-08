@@ -11,3 +11,8 @@ a.general:hover {
     text-decoration: underline;
     text-decoration-color: purple;
 }
+
+.deleted {
+    text-decoration: line-through;
+    -webkit-text-decoration-line: line-through;
+}

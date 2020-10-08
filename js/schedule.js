@@ -158,8 +158,8 @@ const data = {
             "exam": "<p class=\"warning\">\n" +
                 "            <img src=\"../images/hwggstop.gif\" alt=\"stop\">\n" +
                 "            &nbsp;<strong>(2019/20 Semester A exam has been cancelled)\n</strong>" +
-                "        </p>\n <s>" +
-                "        <TABLE border class=\"exam\">\n" +
+                "        </p>\n <div>" +
+                "        <TABLE border class='exam deleted'>\n" +
                 "            <TR>\n" +
                 "                <TH>Course Code</TH>\n" +
                 "                <TH>Course Title</TH>\n" +
@@ -220,7 +220,7 @@ const data = {
                 "                <TD>Main Campus</TD>\n" +
                 "                <TD>0087</TD>\n" +
                 "            </TR>\n" +
-                "        </TABLE></s>"
+                "        </TABLE></div>"
         },
 
         "B": {
