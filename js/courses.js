@@ -153,4 +153,32 @@ const data = [
         sem: "A"
     },
 
+    {
+        subject: "CS",
+        code: "2066",
+        year: "2020/21",
+        sem: "B"
+    },
+
+    {
+        subject: "CS",
+        code: "3103",
+        year: "2020/21",
+        sem: "B"
+    },
+
+    {
+        subject: "CS",
+        code: "3342",
+        year: "2020/21",
+        sem: "B"
+    },
+
+    {
+        subject: "CS",
+        code: "3402",
+        year: "2020/21",
+        sem: "B"
+    },
+
 ]
