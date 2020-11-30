@@ -801,7 +801,7 @@ const data = {
                 "<TD>Discrete Mathematics</TD>\n" +
                 "<TD>09-Dec-2020</TD>\n" +
                 "<TD>14:00 to 16:00</TD>\n" +
-                "<TD>LT-6 Chan Kei Biu Lecture Theatre (LT6)</TD>\n" +
+                "<TD>LT-9 SAE Magnetics Lecture Theatre (LT9)</TD>\n" +
                 "<TD>YEUNG</TD>\n" +
                 "<TD>Main Campus</TD>\n" +
                 "<TD>0007</TD>\n" +
@@ -841,10 +841,10 @@ const data = {
                 "<TD>Problem Solving & Programming</TD>\n" +
                 "<TD>17-Dec-2020</TD>\n" +
                 "<TD>14:00 to 16:00</TD>\n" +
-                "<TD>LT-5 Mr and Mrs Lau Tat Chuen Lecture Theatre (LT5)</TD>\n" +
+                "<TD>LT-1 Tin Ka Ping Lecture Theatre (LT1)</TD>\n" +
                 "<TD>YEUNG</TD>\n" +
                 "<TD>Main Campus</TD>\n" +
-                "<TD>0047</TD>\n" +
+                "<TD>0029</TD>\n" +
                 "</TR>\n" +
                 "</TABLE>"
 
