@@ -850,164 +850,163 @@ const data = {
 
         },
 
-        "B": {"class" : "<p style='color: rebeccapurple;'><b>(Tentative)</b></p>"
-                +"<TABLE  border=1  class=\"ctt-matrix\">\n" +
-                "<TR>\n" +
-                "<TH class=\"ctt-matrix-th-time\">Time</TH>\n" +
-                "<TH class=\"ctt-matrix-th-day\">Monday</TH>\n" +
-                "<TH class=\"ctt-matrix-th-day\">Tuesday</TH>\n" +
-                "<TH class=\"ctt-matrix-th-day\">Wednesday</TH>\n" +
-                "<TH class=\"ctt-matrix-th-day\">Thursday</TH>\n" +
-                "<TH class=\"ctt-matrix-th-day\">Friday</TH>\n" +
-                "<TH class=\"ctt-matrix-th-day\">Saturday</TH>\n" +
-                "<TH class=\"ctt-matrix-th-day\">Sunday</TH>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">08:00-08:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">09:00-09:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>16682 <BR>CS2066-CA1<BR>YEUNG LT-1</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>16690 <BR>CS2066-TA3<BR>YEUNG B5-211</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">10:00-10:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10035 <BR>CS3402-CA1<BR>YEUNG LT-2</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">11:00-11:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>10038 <BR>CS3402-TA3<BR>MMW 2450</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">12:00-12:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10031 <BR>CS3103-C01<BR>YEUNG LT-2</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">13:00-13:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>11366 <BR>CS3342-C01<BR>YEUNG LT-1</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">14:00-14:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>11370 <BR>CS3342-T04<BR>MMW 2450</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">15:00-15:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">16:00-16:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">17:00-17:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>13142 <BR>CS3103-T04<BR>MMW 2450</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10789 <BR>CS2611-S01<BR>YEUNG LT-1</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">18:00-18:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">19:00-19:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">20:00-20:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">21:00-21:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "<TR>\n" +
-                "<TD class=\"ctt-matrix-td-time\">22:00-22:50</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "<TD class=\"ctt-matrix-cell-blank\">&nbsp</TD>\n" +
-                "</TR>\n" +
-                "</TABLE>",
+        "B": {
+            "class" : "<table  border=1  class=\"ctt-matrix\">\n" +
+                "<tr>\n" +
+                "<th class=\"ctt-matrix-th-time\">Time</th>\n" +
+                "<th class=\"ctt-matrix-th-day\">Monday</th>\n" +
+                "<th class=\"ctt-matrix-th-day\">Tuesday</th>\n" +
+                "<th class=\"ctt-matrix-th-day\">Wednesday</th>\n" +
+                "<th class=\"ctt-matrix-th-day\">Thursday</th>\n" +
+                "<th class=\"ctt-matrix-th-day\">Friday</th>\n" +
+                "<th class=\"ctt-matrix-th-day\">Saturday</th>\n" +
+                "<th class=\"ctt-matrix-th-day\">Sunday</th>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">08:00-08:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">09:00-09:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>16682 <BR>CS2066-CA1<BR>YEUNG LT-1</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">10:00-10:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10035 <BR>CS3402-CA1<BR>YEUNG LT-2</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>16689 <BR>CS2066-TA2<BR>YEUNG B5-211</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">11:00-11:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>10038 <BR>CS3402-TA3<BR>MMW 2450</td>\n" +
+                "<td class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>11368 <BR>CS3342-T02<BR>MMW 2450</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">12:00-12:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10031 <BR>CS3103-C01<BR>YEUNG LT-2</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">13:00-13:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>15194 <BR>CS3481-TP4<BR>LAU 5-206</td>\n" +
+                "<td class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>11366 <BR>CS3342-C01<BR>YEUNG LT-1</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">14:00-14:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">15:00-15:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">16:00-16:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">17:00-17:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-class\" rowspan=1 valign=top>13142 <BR>CS3103-T04<BR>MMW 2450</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>10789 <BR>CS2611-S01<BR>YEUNG LT-1</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">18:00-18:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">19:00-19:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-class\" rowspan=2 valign=top>15192 <BR>CS3481-CP1<BR>YEUNG LT-17</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">20:00-20:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">21:00-21:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td class=\"ctt-matrix-td-time\">22:00-22:50</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
+                "</tr>\n" +
+                "</table>",
         },
 
         "Summer": {}

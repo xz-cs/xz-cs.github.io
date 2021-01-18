@@ -181,4 +181,11 @@ const data = [
         sem: "B"
     },
 
+    {
+        subject: "CS",
+        code: "3481",
+        year: "2020/21",
+        sem: "B"
+    },
+
 ]
