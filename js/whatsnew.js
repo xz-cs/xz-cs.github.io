@@ -1,7 +1,8 @@
 const data = {
-    versions: ["Older", "4.3", "4.3.1", "4.3.2", "4.4", "4.4.1", "4.4.5", "4.5", "4.5.1", "4.5.2", "4.5.3", "4.5.4", "4.6", "4.6.1", "4.6.1-C1", "4.6.1-C2", "4.6.1-C3", "4.6.1-C4"],
+    versions: ["Older", "4.3", "4.3.1", "4.3.2", "4.4", "4.4.1", "4.4.5", "4.5", "4.5.1", "4.5.2", "4.5.3",
+        "4.5.4", "4.6", "4.6.1", "4.6.1-C1", "4.6.1-C2", "4.6.1-C3", "4.6.1-C4", "4.6.1-C5"],
 
-    latest_date: "18 Jan. 2021",
+    latest_date: "26 Mar. 2021",
 
     "Older": "<p>The codes for older version (3.x) can be found " +
         "<a href='https://github.com/xz-cs/web_old_3' target='_blank'>in this archived repository</a> .</p>",
@@ -102,5 +103,10 @@ const data = {
         "        <li>Content update 04</li>\n" +
         "    </ul>\n" +
         "    <p style=\"text-align: right;\"> -- 18 Jan. 2021 &emsp; </p>",
+
+    "4.6.1-C5" : "<ul>\n" +
+        "        <li>Content update 05</li>\n" +
+        "    </ul>\n" +
+        "    <p style=\"text-align: right;\"> -- 26 Mar. 2021 &emsp; </p>",
 
 }

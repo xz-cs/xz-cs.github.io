@@ -1007,6 +1007,71 @@ const data = {
                 "<td class=\"ctt-matrix-cell-blank\">&nbsp</td>\n" +
                 "</tr>\n" +
                 "</table>",
+
+            "exam" : "<p style='color: red; font-weight: bold;'> [May not be final yet.] </p>" +
+                "<table  border class=\"exam\">\n" +
+                "<tr>\n" +
+                "<th>Course Code</th>\n" +
+                "<th>Course Title</th>\n" +
+                "<th>Date</th>\n" +
+                "<th>Time</th>\n" +
+                "<th>Room</th>\n" +
+                "<th>Building</th>\n" +
+                "<th>Campus</th>\n" +
+                "<th>Seat No.</th>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td> CS3481</td>\n" +
+                "<td>Fundamentals of Data Science</td>\n" +
+                "<td>03-May-2021</td>\n" +
+                "<td>18:30 to 20:30</td>\n" +
+                "<td>LT-3 C Y Sun Lecture Theatre (LT3)</td>\n" +
+                "<td>YEUNG</td>\n" +
+                "<td>Main Campus</td>\n" +
+                "<td>0035</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td> CS3342</td>\n" +
+                "<td>Software Design</td>\n" +
+                "<td>04-May-2021</td>\n" +
+                "<td>14:00 to 16:00</td>\n" +
+                "<td>LT-2 Mr and Mrs Sze Chi Ching Lecture Theatre (LT2)</td>\n" +
+                "<td>YEUNG</td>\n" +
+                "<td>Main Campus</td>\n" +
+                "<td>0139</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td> CS3103</td>\n" +
+                "<td>Operating Systems</td>\n" +
+                "<td>07-May-2021</td>\n" +
+                "<td>09:30 to 11:30</td>\n" +
+                "<td>LT-17 Wong To Yick Tong Lecture Theatre (LT17)</td>\n" +
+                "<td>YEUNG</td>\n" +
+                "<td>Main Campus</td>\n" +
+                "<td>0129</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td> CS2066</td>\n" +
+                "<td>IT Professionals and Societ</td>\n" +
+                "<td>13-May-2021</td>\n" +
+                "<td>18:30 to 20:30</td>\n" +
+                "<td>LT-1 Tin Ka Ping Lecture Theatre (LT1)</td>\n" +
+                "<td>YEUNG</td>\n" +
+                "<td>Main Campus</td>\n" +
+                "<td>0117</td>\n" +
+                "</tr>\n" +
+                "<tr>\n" +
+                "<td> CS3402</td>\n" +
+                "<td>Database Systems</td>\n" +
+                "<td>15-May-2021</td>\n" +
+                "<td>09:30 to 11:30</td>\n" +
+                "<td>8-210 AC3 Multi-purpose Room (CDFO)</td>\n" +
+                "<td>LAU</td>\n" +
+                "<td>Main Campus</td>\n" +
+                "<td>0075</td>\n" +
+                "</tr>\n" +
+                "</table>",
+
         },
 
         "Summer": {}
